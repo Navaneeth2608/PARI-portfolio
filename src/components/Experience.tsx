@@ -6,17 +6,29 @@ import { Briefcase, Calendar, MapPin, Award } from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
-      role: "VLSI Design & FIR Filter Implementation Intern",
+      role: "Industrial Training – IoT & Embedded Systems",
+      company: "Galwin Technology",
+      location: "Tiruchirappalli, Tamil Nadu, India",
+      duration: "June 2026 – July 2026",
+      summary: "Acquired comprehensive hands-on training and built connected architectures using microcontrollers and cloud IoT platforms.",
+      details: [
+        "Completed hands-on industrial training in C Programming, Arduino, and IoT, gaining practical experience in embedded systems, sensor interfacing, and hardware programming.",
+        "Developed IoT-based applications using ESP8266 and Blynk Cloud for real-time sensor monitoring, remote device control, and a Smart Environmental Monitoring System."
+      ],
+      technologies: ["C Programming", "Arduino", "IoT", "ESP8266", "Blynk Cloud", "Sensor Interfacing", "Hardware Programming"],
+      outcome: "Designed and deployed a fully functional Smart Environmental Monitoring System with real-time cloud dashboard access."
+    },
+    {
+      role: "Internship in Design and Analysis of Digital VLSI and FIR Low Pass Filter Implementation using Distributed Arithmetic",
       company: "National Institute of Technology (NIT)",
       location: "Tiruchirappalli, Tamil Nadu, India",
       duration: "January 2026 – February 2026",
       summary: "Collaborated on digital design, simulation, and analysis of VLSI digital circuits, focusing on arithmetic implementation paradigms.",
       details: [
-        "Designed, modeled, and simulated complex digital circuits utilizing Verilog HDL on Xilinx Vivado and Xilinx ISE.",
-        "Implemented and evaluated an Finite Impulse Response (FIR) Low Pass Filter utilizing the Distributed Arithmetic (DA) technique, replacing standard multipliers to optimize silicon area and processing throughput.",
-        "Performed detailed timing analyses, functional simulation checks, and performance benchmarks to ensure adherence to hardware specifications."
+        "Designed and simulated digital circuits using Verilog HDL and Xilinx Vivado.",
+        "Implemented and analysed a FIR Low Pass Filter using the Distributed Arithmetic technique."
       ],
-      technologies: ["Verilog HDL", "Xilinx Vivado", "Xilinx ISE", "Digital VLSI Design", "Distributed Arithmetic", "Circuit Simulation"],
+      technologies: ["Verilog HDL", "Xilinx Vivado", "Digital VLSI Design", "Distributed Arithmetic", "Circuit Simulation"],
       outcome: "Successfully achieved functional verification and reduced multiplier-based logic resource requirements through Distributed Arithmetic optimization."
     }
   ];

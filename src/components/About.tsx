@@ -13,11 +13,16 @@ export default function About() {
   ];
 
   const softSkills = [
-    "Problem-Solving & Critical Thinking",
-    "Teamwork & Leadership",
-    "Time Management & Adaptability",
-    "Presentation & Communication",
-    "Continuous Learning Mindset"
+    "Communication skills",
+    "Problem-solving ability",
+    "Teamwork",
+    "Time management",
+    "Adaptability",
+    "Critical thinking",
+    "Leadership",
+    "Presentation skills",
+    "Professional attitude",
+    "Continuous learning mindset"
   ];
 
   return (
@@ -39,19 +44,19 @@ export default function About() {
           <div className="lg:col-span-7 space-y-6">
             <ScrollReveal delay={0.1}>
               <p className="text-lg font-serif text-charcoal dark:text-cream leading-relaxed">
-                I am an Electronics and Communication Engineering student with a passion for designing hardware architectures and leveraging data-driven approaches to solve complex engineering problems.
+                I am an Electronics and Communication Engineering graduate with a strong foundation in VLSI Design, Embedded Systems, IoT, Analog and Digital Circuit Design, Digital Signal Processing, and hardware-based system development.
               </p>
             </ScrollReveal>
             
             <ScrollReveal delay={0.2}>
               <p className="text-[#4b5563] dark:text-[#a1a1aa] leading-relaxed">
-                My core foundation spans digital and analog VLSI design, embedded systems, and digital signal processing. Through hands-on internships at National Institute of Technology, Tiruchirappalli, and academic projects, I have simulated digital circuits, analyzed timing constraints, and implemented hardware acceleration techniques like Distributed Arithmetic for digital filters.
+                My background includes hands-on experience through internships and academic projects involving digital circuit design and simulation, Digital VLSI design, FIR low-pass filter implementation using Distributed Arithmetic, and image processing-based embedded applications.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>
               <p className="text-[#4b5563] dark:text-[#a1a1aa] leading-relaxed">
-                Simultaneously, I have developed a strong interest in Data Science. Using Python and libraries like Pandas, NumPy, and Scikit-Learn, I enjoy performing exploratory data analysis, constructing machine learning models, and extracting actionable intelligence from complex, multidimensional datasets. I bridge the gap between hardware engineering and predictive analytics.
+                I am also passionate about Data Science using Python, with skills in data pre-processing, analysis, data visualization, and machine learning. I am adept at combining engineering problem-solving with data-driven approaches to develop practical solutions and derive meaningful insights from complex datasets.
               </p>
             </ScrollReveal>
 

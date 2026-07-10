@@ -1,36 +1,47 @@
 "use client";
 
 import { ScrollReveal } from "./UI";
-import { Github, ExternalLink, Cpu, Layout, Layers } from "lucide-react";
+import { Github, ExternalLink, Cpu, Layout, Layers, Wifi } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
     {
-      title: "FIR Low Pass Filter Implementation",
+      title: "FIR Low Pass Filter Implementation using Distributed Arithmetic",
       subtitle: "VLSI Design & Digital Signal Processing",
-      description: "Designed, simulated, and verified a Finite Impulse Response (FIR) low-pass filter using the Distributed Arithmetic (DA) technique. DA optimizes digital logic by replacing conventional multipliers with look-up tables (LUTs) and shift-accumulators, greatly enhancing computational throughput and silicon efficiency.",
-      tools: ["Verilog HDL", "Xilinx Vivado", "Digital VLSI", "Logic Simulation", "Timing Constraints"],
+      description: "Designed, simulated, and verified a Finite Impulse Response (FIR) low-pass filter using the Distributed Arithmetic (DA) technique in Xilinx Vivado. DA replaces conventional hardware multipliers with lookup tables (LUTs) and shift-accumulators, optimizing silicon area and processing throughput.",
+      tools: ["Verilog HDL", "Xilinx Vivado", "Digital VLSI", "Logic Simulation", "Timing Analysis"],
       features: [
-        "LUT-based arithmetic structure replacing hardware multipliers.",
-        "Comprehensive logic simulation and waveform checks.",
-        "Timing constraint verification and path-delay optimizations.",
-        "Resource utilization assessment on FPGA models."
+        "Designed and implemented a FIR Low Pass Filter using the Distributed Arithmetic technique in Xilinx Vivado.",
+        "Verified functionality through simulation, timing analysis, and performance evaluation."
       ],
       github: "https://github.com/pari707/fir-filter-da",
       live: null,
       type: "hardware", // will render schematic mockup
     },
     {
+      title: "Smart Environmental Monitoring System",
+      subtitle: "IoT & Embedded Systems",
+      description: "Developed a connected environmental system utilizing ESP8266 and Blynk Cloud for real-time sensor monitoring, remote device control, and intelligent telemetry tracking.",
+      tools: ["ESP8266", "Blynk Cloud", "Arduino IDE", "C Programming", "Sensor Interfacing", "Hardware Programming"],
+      features: [
+        "Completed hands-on industrial training in C Programming, Arduino, and IoT.",
+        "Gained practical experience in embedded systems, sensor interfacing, and hardware programming.",
+        "Developed IoT-based applications for real-time sensor monitoring, remote device control, and environmental telemetry."
+      ],
+      github: "https://github.com/pari707/smart-env-monitor",
+      live: null,
+      type: "iot", // will render IoT diagram mockup
+    },
+    {
       title: "Data Preprocessing & Predictive ML System",
       subtitle: "Data Science & Analytical Models",
-      description: "Developed end-to-end analytical pipelines using Python to clean, manipulate, and explore structured datasets, implementing machine learning classifiers to predict target variables based on engineering telemetry.",
-      tools: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn", "EDA"],
+      description: "Constructed data pipelines using Python to clean, manipulate, and explore structured datasets, implementing machine learning models to predict targets and extract insights.",
+      tools: ["Python", "Pandas", "NumPy", "Matplotlib", "ML Models", "EDA"],
       features: [
-        "Robust data cleaning, outlier treatment, and feature scaling.",
-        "Exploratory Data Analysis (EDA) with customized correlation plots.",
-        "Implementation and benchmarking of classification algorithms.",
-        "Performance evaluation using accuracy, recall, and ROC-AUC metrics."
+        "Performed data cleaning, data manipulation, and outlier treatment.",
+        "Conducted Exploratory Data Analysis (EDA) and visualization using Pandas, NumPy, and Matplotlib.",
+        "Built predictive models using Machine Learning classifiers to solve data-driven engineering problems."
       ],
       github: "https://github.com/pari707/data-science-eda",
       live: null,
@@ -82,10 +93,39 @@ export default function Projects() {
                     
                     <rect x="310" y="30" width="80" height="40" rx="4" className="stroke-charcoal dark:stroke-cream stroke-1" fill="none" />
                     <text x="350" y="54" textAnchor="middle" className="fill-charcoal dark:fill-cream text-[9px] font-sans">Output y[n]</text>
-
+ 
                     {/* Clock waveform below */}
                     <path d="M20 120 H60 V100 H100 V120 H140 V100 H180 V120 H220 V100 H260 V120 H300 V100 H340 V120 H380" className="stroke-lavender/30 dark:stroke-lavender/15 stroke-[1.5]" />
                     <text x="20" y="140" className="fill-charcoal/40 dark:fill-cream/30 text-[8px] font-sans">CLOCK WAVEFORM SIMULATION</text>
+                  </svg>
+                ) : proj.type === "iot" ? (
+                  /* Custom IoT SVG Visual Diagram */
+                  <svg className="w-full h-full text-lavender/40 dark:text-lavender/25" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* ESP8266 node */}
+                    <rect x="25" y="45" width="90" height="55" rx="5" className="stroke-charcoal dark:stroke-cream stroke-1" fill="none" />
+                    <text x="70" y="65" textAnchor="middle" className="fill-charcoal dark:fill-cream text-[9px] font-sans font-bold">ESP8266 MCU</text>
+                    <text x="70" y="78" textAnchor="middle" className="fill-charcoal/60 dark:fill-cream/60 text-[8px] font-sans">Sensor Interface</text>
+
+                    {/* Wifi signals */}
+                    <path d="M125 60 Q145 50 165 60" className="stroke-lavender stroke-2" strokeDasharray="2,2" />
+                    <path d="M130 70 Q145 62 160 70" className="stroke-lavender stroke-[1.5]" />
+                    <path d="M135 80 Q145 74 155 80" className="stroke-lavender stroke-1" />
+
+                    {/* Blynk Cloud symbol */}
+                    <path d="M185 80 C180 75, 180 60, 195 55 C190 40, 215 35, 225 45 C235 35, 255 45, 250 60 C260 65, 260 75, 250 80 Z" className="stroke-lavender stroke-2" fill="none" />
+                    <text x="218" y="67" textAnchor="middle" className="fill-lavender text-[9px] font-serif font-bold">Blynk Cloud</text>
+
+                    {/* Signal to dashboard */}
+                    <path d="M265 70 H300" className="stroke-charcoal dark:stroke-cream stroke-1" />
+                    <polygon points="296,67 302,70 296,73" className="fill-charcoal dark:fill-cream" />
+
+                    {/* Remote Dashboard screen */}
+                    <rect x="305" y="35" width="70" height="75" rx="4" className="stroke-charcoal dark:stroke-cream stroke-1" fill="none" />
+                    <rect x="312" y="45" width="56" height="40" rx="2" className="stroke-lavender/30 dark:stroke-lavender/10" fill="currentColor" />
+                    <circle cx="340" cy="95" r="3" className="fill-charcoal dark:fill-cream" />
+                    <text x="340" y="68" textAnchor="middle" className="fill-lavender text-[8px] font-sans font-bold">MONITOR</text>
+                    
+                    <text x="20" y="140" className="fill-charcoal/40 dark:fill-cream/30 text-[8px] font-sans">SMART ENVIRONMENTAL TELEMETRY STREAM</text>
                   </svg>
                 ) : (
                   /* Analytical Plot Mockup in SVG */
@@ -101,7 +141,7 @@ export default function Projects() {
                     <text x="35" y="125" textAnchor="end" className="fill-charcoal/40 dark:fill-cream/30 text-[7px]">0.0</text>
                     <text x="360" y="140" textAnchor="middle" className="fill-charcoal/40 dark:fill-cream/30 text-[7px]">Recall</text>
                     <text x="25" y="75" textAnchor="middle" transform="rotate(-90 25 75)" className="fill-charcoal/40 dark:fill-cream/30 text-[7px]">Precision</text>
-
+ 
                     {/* Precision-Recall curve */}
                     <path d="M40 30 Q120 32 200 45 T320 100 T360 130" className="stroke-lavender stroke-2" fill="none" />
                     <path d="M40 30 Q120 32 200 45 T320 100 T360 130 L360 130 H40 Z" className="fill-lavender/5" />
@@ -121,6 +161,8 @@ export default function Projects() {
                 <div className="absolute top-4 right-4 p-2 rounded-lg bg-cream/90 dark:bg-charcoal/90 border border-cream-border dark:border-charcoal-border">
                   {proj.type === "hardware" ? (
                     <Cpu className="w-4 h-4 text-lavender" />
+                  ) : proj.type === "iot" ? (
+                    <Wifi className="w-4 h-4 text-lavender" />
                   ) : (
                     <Layers className="w-4 h-4 text-lavender" />
                   )}

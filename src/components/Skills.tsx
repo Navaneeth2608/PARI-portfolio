@@ -29,13 +29,13 @@ const SKILL_CATEGORIES = [
   {
     title: "Hardware & EDA Tools",
     icon: Cpu,
-    skills: ["Xilinx Vivado", "Xilinx ISE", "ProteusVSM", "Keil uVision", "CANoe", "Circuit Design & Simulation"],
+    skills: ["Xilinx Vivado", "Xilinx ISE", "ProteusVSM", "Keil", "CANoe", "Circuit Design & Simulation"],
     color: "from-orange-500/10 to-red-500/10",
   },
   {
     title: "Development & Systems",
     icon: Wrench,
-    skills: ["VSCode", "GitHub", "Vercel", "Anaconda Navigator"],
+    skills: ["VSCode", "GitHub", "Vercel", "Anaconda"],
     color: "from-green-500/10 to-teal-500/10",
   },
 ];

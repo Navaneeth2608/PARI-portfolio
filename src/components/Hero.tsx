@@ -24,7 +24,7 @@ export default function Hero() {
 
             {/* Professional Subheading */}
             <p className="text-lg sm:text-xl font-sans font-light tracking-wide text-[#4b5563] dark:text-[#a1a1aa] mb-8 leading-relaxed">
-              Electronics & Communication Engineering student from India, specializing in VLSI Design, Embedded Systems, IoT, and Data Analytics.
+              Electronics & Communication Engineer from India, specializing in VLSI Design, Embedded Systems, IoT, and Data Analytics.
             </p>
 
             {/* Design Line & Callout */}

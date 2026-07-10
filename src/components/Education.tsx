@@ -6,15 +6,15 @@ import { GraduationCap, Calendar, BookOpen, Award } from "lucide-react";
 export default function Education() {
   const education = [
     {
-      degree: "B.E. Electronics & Communication Engineering",
+      degree: "B.E. Electronics & Communication",
       institution: "University College of Engineering Trichy",
-      duration: "2023 – 2027 (Expected)",
+      duration: "2023 – 2027 (Pursuing)",
       metricLabel: "CGPA",
-      metricValue: "7.5 / 10.0",
+      metricValue: "7.5",
       description: "Acquiring core engineering knowledge in VLSI design, embedded systems, microprocessor architectures, digital signal processing, control systems, and communication theories. Actively translating theory into practice through design and simulation projects.",
     },
     {
-      degree: "Higher Secondary Course (12th Grade)",
+      degree: "Higher Secondary (12th)",
       institution: "RC Hr Sec School, Trichy",
       duration: "Completed 2023",
       metricLabel: "Percentage",
@@ -22,12 +22,12 @@ export default function Education() {
       description: "Focused on core Mathematics, Physics, Chemistry, and Computer Science studies.",
     },
     {
-      degree: "Secondary School Leaving Certificate (10th Grade)",
+      degree: "SSLC (10th)",
       institution: "RC Hr Sec School, Trichy",
       duration: "Completed 2021",
-      metricLabel: "Status",
-      metricValue: "First Class",
-      description: "Completed foundation studies with a focus on science and math streams.",
+      metricLabel: "Board",
+      metricValue: "State Board",
+      description: "Completed foundation secondary school education with a focus on science and math streams.",
     }
   ];
 
